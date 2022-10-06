@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "⚠️",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start:dev": "npx live-server"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pedronr03/natours.git"

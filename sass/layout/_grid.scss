@@ -1,0 +1,22 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+.row {
+  max-width: variables.$grid-width;
+  margin: 0 auto;
+
+  @include mixins.clearfix;
+
+  &:not(:last-child) {
+    margin-bottom: variables.$gutter-vertical;
+  }
+
+  .col-1-of-2 {
+    float: left;
+    width: calc((100% - #{variables.$gutter-horizontal}) / 2);
+
+    &:not(:last-child) {
+      margin-right: variables.$gutter-horizontal;
+    }
+  }
+}
